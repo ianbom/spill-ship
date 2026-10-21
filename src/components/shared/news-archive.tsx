@@ -1,0 +1,5 @@
+'use client';
+import {useState} from 'react';
+import {activities} from '@/data/activities';
+import {ActivityCard} from './sections';
+export function NewsArchive(){const [year,setYear]=useState('all');const [page,setPage]=useState(1);const filtered=activities.filter(a=>year==='all'||a.date.startsWith(year));const pages=Math.ceil(filtered.length/6);return <><div className="archive-tools"><label htmlFor="year">Tahun publikasi</label><select id="year" value={year} onChange={e=>{setYear(e.target.value);setPage(1)}}><option value="all">Semua Tahun</option><option>2026</option><option>2025</option></select><p className="ml-auto text-xs text-neutral-500" aria-live="polite">{filtered.length} aktivitas</p></div><div className="activities-list">{filtered.slice((page-1)*6,page*6).map(a=><ActivityCard key={a.slug} item={a}/>)}</div>{pages>1&&<nav className="pagination" aria-label="Halaman berita">{Array.from({length:pages},(_,i)=><button key={i} aria-current={page===i+1?'page':undefined} onClick={()=>{setPage(i+1);document.getElementById('archive')?.scrollIntoView({block:'start'})}}>{i+1}</button>)}</nav>}</>}

@@ -1,0 +1,468 @@
+Total messages: 4 (Errors: 1, Warnings: 1)
+Returning 1 messages for level "error"
+
+[ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <Head>
+        <__next_root_layout_boundary__>
+          <SegmentViewNode type="layout" pagePath="layout.tsx">
+            <SegmentTrieNode>
+            <link>
+            <script>
+            <script>
+            <RootLayout>
+              <html lang="id">
+                <body className="libre_bask...">
+                  <a>
+                  <SiteHeader>
+                    <header className={"site-hea..."}>
+                      <div className="container ...">
+                        <LinkComponent href="/" aria-label="SPIL — Ber..." className="logo">
+                          <a aria-label="SPIL — Ber..." className="logo" ref={function} onClick={function onClick} ...>
+                            <img
+                              alt="SPIL"
+                              fetchPriority={undefined}
++                             loading={undefined}
+-                             loading="eager"
+                              width={80}
+                              height={56}
+                              decoding="async"
+                              data-nimg="1"
+                              className={undefined}
+                              style={{color:"transparent"}}
+                              sizes={undefined}
+                              srcSet={undefined}
+                              src="/assets/spil/logo-spil.svg"
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                            ...
+                        ...
+                      ...
+                  ...
+                    <SegmentViewNode type="page" pagePath="page.tsx">
+                      <SegmentTrieNode>
+                      <Home>
+                        <section className="home-hero">
+                          <img
+                            alt="Kapal petikemas SPIL berlayar menghubungkan kepulauan Indonesia"
+                            fetchPriority={undefined}
++                           loading={undefined}
+-                           loading="eager"
+                            width={undefined}
+                            height={undefined}
+                            decoding="async"
+                            data-nimg="fill"
+                            className={undefined}
+                            style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                            sizes="100vw"
+                            srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fhero-ship.webp&w=640&q=75 640w, /_next/image..."}
+                            src={"/_next/image?url=%2Fassets%2Fspil%2Fhero-ship.webp&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                          ...
+                          ...
+                        <div>
+                        <section className="about-prev...">
+                          <div className="container ...">
+                            <div>
+                            <div className="about-image">
+                              <img
+                                alt="Kontainer SPIL yang mendukung pengiriman ke seluruh Indonesia"
+                                fetchPriority={undefined}
++                               loading="lazy"
+-                               loading="eager"
+                                width={undefined}
+                                height={undefined}
+                                decoding="async"
+                                data-nimg="fill"
+                                className={undefined}
+                                style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                sizes="(max-width:767px) 100vw, 50vw"
+                                srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fabout-spil.webp&w=384&q=75 384w, /_next/..."}
+                                src={"/_next/image?url=%2Fassets%2Fspil%2Fabout-spil.webp&w=3840&q=75"}
+                                ref={function}
+                                onLoad={function onLoad}
+                                onError={function onError}
+                              >
+                        ...
+                          <div className="services-grid">
+                            ...
+                              <a className="service-card" ref={function} onClick={function onClick} ...>
+                                <img
+                                  alt="Port to Port"
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="(max-width:767px) 100vw, 50vw"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fport-to-port.webp&w=384&q=75 384w, /_n..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fport-to-port.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                                ...
+                            ...
+                              <a className="service-card" ref={function} onClick={function onClick} ...>
+                                <img
+                                  alt="Door to Door"
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="(max-width:767px) 100vw, 50vw"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fdoor-to-door.webp&w=384&q=75 384w, /_n..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fdoor-to-door.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                                ...
+                            ...
+                              <a className="service-card" ref={function} onClick={function onClick} ...>
+                                <img
+                                  alt="Air Freight"
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="(max-width:767px) 100vw, 50vw"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fair-freight.webp&w=384&q=75 384w, /_ne..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fair-freight.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                                ...
+                            ...
+                              <a className="service-card" ref={function} onClick={function onClick} ...>
+                                <img
+                                  alt="Land Transport"
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="(max-width:767px) 100vw, 50vw"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fland-transport.webp&w=384&q=75 384w, /..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fland-transport.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                                ...
+                        <CapabilityShowcase>
+                          <section className="capabilities">
+                            <img
+                              alt="Operasional pelabuhan SPIL"
+                              fetchPriority={undefined}
++                             loading="lazy"
+-                             loading="eager"
+                              width={undefined}
+                              height={undefined}
+                              decoding="async"
+                              data-nimg="fill"
+                              className={undefined}
+                              style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                              sizes="100vw"
+                              srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fport-to-port.webp&w=640&q=75 640w, /_next/..."}
+                              src={"/_next/image?url=%2Fassets%2Fspil%2Fport-to-port.webp&w=3840&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                            ...
+                        ...
+                          <div className="coverage-t..." ref={{current:null}}>
+                            ...
+                              <a className="coverage-card" ref={function} onClick={function onClick} ...>
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="400px"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fsea-freight.webp&w=32&q=75 32w, /_next..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fsea-freight.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                                ...
+                            ...
+                              <a className="coverage-card" ref={function} onClick={function onClick} ...>
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="400px"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Finternational.webp&w=32&q=75 32w, /_ne..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Finternational.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                                ...
+                            ...
+                              <a className="coverage-card" ref={function} onClick={function onClick} ...>
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="400px"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fland-transport.webp&w=32&q=75 32w, /_n..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fland-transport.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                                ...
+                            ...
+                              <a className="coverage-card" ref={function} onClick={function onClick} ...>
+                                <img
+                                  alt=""
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="400px"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fwarehouse.webp&w=32&q=75 32w, /_next/i..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fwarehouse.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                                ...
+                        ...
+                          <div className="activities...">
+                            ...
+                              <div className="activity-i...">
+                                <img
+                                  alt="Hari Maritim Internasional, PT SPIL dan PT DPL Bangun Kesadaran Keberlanjutan G..."
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="(max-width:767px) 100vw, 400px"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fnews-1.webp&w=640&q=75 640w, /_next/im..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fnews-1.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                            ...
+                              <div className="activity-i...">
+                                <img
+                                  alt="SPIL Salurkan Bantuan Masker bagi Masyarakat Terdampak Kebakaran di Kalimantan"
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="(max-width:767px) 100vw, 400px"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fnews-2.webp&w=640&q=75 640w, /_next/im..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fnews-2.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                            ...
+                              <div className="activity-i...">
+                                <img
+                                  alt="PT SPIL Dukung Pelestarian Ekosistem Laut melalui Penanaman Lamun Bersama Green..."
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="(max-width:767px) 100vw, 400px"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fnews-3.webp&w=640&q=75 640w, /_next/im..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fnews-3.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                            ...
+                              <div className="activity-i...">
+                                <img
+                                  alt="PT SPIL dan BPBD Jatim Kirimkan Bantuan untuk Korban Bencana di Sumatera"
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="(max-width:767px) 100vw, 400px"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fnews-4.webp&w=640&q=75 640w, /_next/im..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fnews-4.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                            ...
+                              <div className="activity-i...">
+                                <img
+                                  alt="PT SPIL dan PT DPL Tanam Bibit Pohon Srikaya Peringati Hari Menanam Pohon Nasional"
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="(max-width:767px) 100vw, 400px"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fnews-5.webp&w=640&q=75 640w, /_next/im..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fnews-5.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                            ...
+                              <div className="activity-i...">
+                                <img
+                                  alt="IDEAFEST 2025, SPIL X Universitas Ciputra: Dari Ide Menjadi Dampak Nyata untuk ..."
+                                  fetchPriority={undefined}
++                                 loading="lazy"
+-                                 loading="eager"
+                                  width={undefined}
+                                  height={undefined}
+                                  decoding="async"
+                                  data-nimg="fill"
+                                  className={undefined}
+                                  style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                                  sizes="(max-width:767px) 100vw, 400px"
+                                  srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fnews-6.webp&w=640&q=75 640w, /_next/im..."}
+                                  src={"/_next/image?url=%2Fassets%2Fspil%2Fnews-6.webp&w=3840&q=75"}
+                                  ref={function}
+                                  onLoad={function onLoad}
+                                  onError={function onError}
+                                >
+                        <section>
+                        <ContactCTA>
+                          <section className="contact-cta">
+                            <img
+                              alt="Kegiatan logistik dan pelabuhan SPIL"
+                              fetchPriority={undefined}
++                             loading="lazy"
+-                             loading="eager"
+                              width={undefined}
+                              height={undefined}
+                              decoding="async"
+                              data-nimg="fill"
+                              className={undefined}
+                              style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,objectFit:undefined, ...}}
+                              sizes="100vw"
+                              srcSet={"/_next/image?url=%2Fassets%2Fspil%2Fcontact-port.webp&w=640&q=75 640w, /_next/..."}
+                              src={"/_next/image?url=%2Fassets%2Fspil%2Fcontact-port.webp&w=3840&q=75"}
+                              ref={function}
+                              onLoad={function onLoad}
+                              onError={function onError}
+                            >
+                            ...
+                    ...
+                  <SiteFooter>
+                    <footer className="site-footer">
+                      ...
+                        <LinkComponent>
+                          <LinkComponent href="/" aria-label="Beranda SPIL">
+                            <a aria-label="Beranda SPIL" ref={function} onClick={function onClick} ...>
+                              <img
+                                alt="SPIL"
+                                fetchPriority={undefined}
++                               loading="lazy"
+-                               loading="eager"
+                                width={115}
+                                height={81}
+                                decoding="async"
+                                data-nimg="1"
+                                className={undefined}
+                                style={{color:"transparent"}}
+                                sizes={undefined}
+                                srcSet={undefined}
+                                src="/assets/spil/logo-spil.svg"
+                                ref={function}
+                                onLoad={function onLoad}
+                                onError={function onError}
+                              >
+                      ...
+        ...
+ @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js:995

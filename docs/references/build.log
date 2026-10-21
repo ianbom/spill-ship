@@ -1,0 +1,50 @@
+
+> kapal@1.0.0 build
+> next build
+
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config took 13ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 803ms
+  Running TypeScript ...
+  Finished TypeScript in 1741ms ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/31) ...
+  Generating static pages using 7 workers (7/31) 
+  Generating static pages using 7 workers (15/31) 
+  Generating static pages using 7 workers (23/31) 
+✓ Generating static pages using 7 workers (31/31) in 458ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /berita
+├   /berita/[slug]
+│ ├ ● /berita/hari-maritim-internasional-pt-spil-pt-dpl-bangun-kesadaran-keberlanjutan-generasi-muda-maritim
+│ ├ ● /berita/spil-salurkan-bantuan-masker-untuk-masyarakat-terdampak-kebakaran-kalimantan
+│ ├ ● /berita/pt-spil-dukung-pelestarian-ekosistem-laut-melalui-penanaman-lamun
+│ └ ● [+4 more paths]
+├ ○ /jaringan
+├ ○ /kontak
+├ ○ /layanan
+├   /layanan/[slug]
+│ ├ ● /layanan/port-to-port
+│ ├ ● /layanan/door-to-door
+│ ├ ● /layanan/air-freight
+│ └ ● [+6 more paths]
+├ ○ /myspil
+├ ○ /perusahaan/grup
+├ ○ /solusi-logistik
+├ ○ /tentang-spil
+├ ○ /wawasan
+└   /wawasan/[slug]
+  ├ ● /wawasan/manfaat-konsolidasi-kargo
+  ├ ● /wawasan/optimasi-logistik-untuk-ekspansi-umkm
+  └ ● /wawasan/mengirim-barang-berat-seperti-mesin
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
